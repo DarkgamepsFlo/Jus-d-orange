@@ -1,0 +1,46 @@
+.profil{
+    margin-top: 20px;
+    padding: 2em;
+}
+
+.image{
+    display: block;
+    width: 200px;
+    height: 200px;
+    background-position: 50% 50%;
+    border: 3px solid #1abc9c;
+}
+
+.profil__title{
+    font-family: 'Hahmlet';
+    font-size: 25px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    color: #fff;
+}
+
+.information{
+    color: #fff;
+}
+.personnalisation {
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+}
+
+.personnalisation:hover{
+    padding-bottom: 1px;
+    border-color: #1abc9c;
+}
+/* media query 100px 100px */
+
+
+@media only screen and (max-width: 420px){
+    .image{
+        display: flex;
+        margin: auto;
+    }
+ }

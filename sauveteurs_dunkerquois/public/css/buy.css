@@ -1,0 +1,135 @@
+.header.header__buy {
+    height: 300px;
+    width: 100%;
+    background: rgb(56, 54, 58);  
+    position: relative; 
+}
+ .header__buy .header__texture{
+    background: url('../image/background.jpg') center no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.searchbar{
+    border-top: 2px solid #1abc9c;
+    border-bottom: 2px solid #1abc9c;
+    position: relative;
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 20px;
+
+}
+
+.find {
+    height: 40px;
+    width: 350px;
+    padding-left: 2px;
+    border:3px solid #1abc9c;
+    border-radius: 5px;
+    outline: 0;
+    transition: all 0.3s ease-in-out;
+
+}
+
+.find:focus{
+    border-color: #000;
+}
+
+.find::placeholder{
+    color: #1abc9c;
+}
+
+.catalogue {
+    padding: 5em;
+}
+
+.container__catalogue{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr ;
+    grid-column-gap: 20px;
+    grid-row-gap: 40px;
+}
+
+
+.card {
+    background-color: white;
+    border-radius: 10px;
+    padding: 1em;
+    box-shadow: 0px 10px 5px #000;
+    text-align: center;
+    /* max-width: 25%; */
+    font-family: 'Roboto';
+    text-decoration: none;
+    color: black;
+}
+
+.card:hover{
+    box-shadow: 0px 10px 5px #1abc9c;
+}
+
+.marque {
+    padding-top: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #1abc9c;
+
+}
+
+.image__items{
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+.price{
+    padding-top: 10px;
+    text-align: left;
+    margin-left: 2em;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+
+}
+
+
+.info{
+    text-align: left;
+    margin-left: 2em;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+
+}
+
+.etat{
+    text-align: left;
+    margin-left: 2em;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+    color: #1abc9c;
+}
+
+
+@media only screen and (max-width: 1200px){
+    .container__catalogue{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+ }
+
+ @media only screen and (max-width: 950px){
+    .container__catalogue{
+        grid-template-columns:1fr 1fr;
+    }
+ }
+
+ @media only screen and (max-width: 600px){
+    .container__catalogue{
+        grid-template-columns: 1fr;
+    }
+    .find{
+        width: 300px;
+    }
+ }
+
+ @media only screen and (max-width: 420px){
+    .find{
+        width: 200px;
+    }
+ }

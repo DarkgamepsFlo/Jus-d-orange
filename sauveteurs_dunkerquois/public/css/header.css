@@ -1,0 +1,164 @@
+.header{
+    height: 450px;
+    width: 100%;
+    background: rgb(56, 54, 58);  
+    position: relative; 
+}
+
+/* Autre pages  */
+.header.header__page {
+    height: 350px;
+}
+.header__page .header__slogan {
+    margin-top: 40px;
+}
+/*  */
+
+
+
+.header__texture {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;left: 0;
+    background: url('../image/background.jpg') center no-repeat;
+    background-size: cover;
+    opacity: 0.6;
+}
+
+.navbar {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
+
+.navbar__logo {
+    color: #fff;
+    font-size: 28px;
+    text-shadow: 2px 3px #1abc9c;
+
+}
+
+.menu__link {
+    font-size: 20px;
+    margin-left: 150px;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+    border-bottom: 2px solid transparent;
+}
+
+.menu__link:hover{
+    padding-bottom: 1px;
+    border-color: #1abc9c;
+}
+
+.menu__link i {
+    margin-right: 5px;
+}
+
+.header__slogan{
+    text-align: center;
+    margin-top: 80px;
+}
+
+.slogan__title {
+    color: #fff;
+    font-size: 60px;
+    text-transform: uppercase;
+    font-family: 'Anton';
+    font-style: italic;
+    letter-spacing: 2px;
+}
+
+
+
+.navbar__toggle{
+    width: 40px;
+    height: 60px;
+    display: flex;
+    align-items: center ;
+    display: none;
+    cursor: pointer;
+}
+
+.toggle__icons, .toggle__icons::before, .toggle__icons::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    border-radius: 5px;
+    background: #fff;
+    position: relative;
+}
+
+.toggle__icons::before{
+    top: 10px;
+}
+.toggle__icons::after{
+    top: -14px;
+}
+
+.is-open .navbar__menu {
+    transform: translateY(0);
+}
+
+@media only screen and (max-width: 1200px){
+    .container{
+        width: 100%;
+        /* padding: 0 20px; */
+    }
+    .navbar__title{
+        margin-left: 5px;
+    }
+
+    .navbar__toggle{
+        margin-right: 15px;
+        display: flex;
+        z-index: 1000;
+    }
+    .navbar__menu{
+        transition: all 0.4s ease-in-out;
+        transform: translateY(-100%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        background: #1abc9c;
+        top: 0; left: 0;
+        z-index: 999;
+
+    }
+    .menu__link{
+        margin: 20px 0;
+        font-size: 24px;
+    }
+    .menu__link:hover{
+        border-color: #fff;
+    }
+    .slogan__title{
+        font-size: 40px;
+    }
+    
+}
+
+@media only screen  and (max-width: 400px){
+    .navbar__title{
+        font-size: 40px;
+    }
+}
+    
+@media only screen  and (max-width: 325px){
+    .slogan__title{
+        font-size: 35px;
+    }
+}
+    
